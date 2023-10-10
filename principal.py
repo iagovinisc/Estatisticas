@@ -14,7 +14,7 @@ media = 0
 linhap = 0
 op = 1
 
-def inserindoValores(vetor, op):
+def inserindoValores(vetor, op): #Inserindo os valores no programa
     op = 1
     vetor = []
     while op != 0:
