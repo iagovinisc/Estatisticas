@@ -1,5 +1,6 @@
 import math
 
+print('CALCULO DE ESTATÍSTICAS\n')
 #declarando todas as variaveis e vetores globais
 vetor = []
 fa = []
