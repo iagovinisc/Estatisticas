@@ -14,9 +14,8 @@ media = 0
 linhap = 0
 op = 1
 
-def inserindoValores(vetor, op): #Inserindo os valores no programa
+def inserindoValores(vetor, op):
     op = 1
-    vetor = []
     while op != 0:
         valor = input('insira um valor ou pressione 0 para finalizar: ')
         try:
@@ -28,7 +27,16 @@ def inserindoValores(vetor, op): #Inserindo os valores no programa
         except ValueError:
             print('Valor inválido. Por favor, insira um número inteiro ou pressione 0 para finalizar.')
 inserindoValores(vetor, op)
+print('-'*50)
+    
 
+# vetor = [ 20, 29, 40, 31, 50, 32, 20,
+#         49, 29, 31, 55, 60, 19, 17,
+#         18, 18, 72, 38, 35, 38, 43,
+#         20, 50, 57, 32, 30, 20, 21,
+#         30, 32, 33, 31, 31, 34, 40,
+#         19, 24, 25, 36, 25, 26, 28,
+#         29, 29, 25, 29, 27, 33, 35]
 
 n = len(vetor)
 print(f'\nquantidade de numeros: {n}')
@@ -41,7 +49,7 @@ print(f'classes: {k}')
 
 # Calculando a amplitude
 amplitude = (maior - menor) / k
-print(f'amplitude: {amplitude}')
+print(f'amplitude: {amplitude}\n')
 
 def criandoIntervalo(menor, amplitude): #criando o intervalo da tabela(amplitude)
     for i in range(k+1):
@@ -129,4 +137,4 @@ def variancia_e_DesvioPadrao(desvioMedio, n):#calculo da variancia e desvio padr
     desvio_padrao = math.sqrt(variancia)
     print(f'\nvariancia: {round(variancia, 2)}\ndesvio padrão: {round(desvio_padrao, 2)}\n')#printando o resultado
 variancia_e_DesvioPadrao(desvioMedio, n)
-
+print('-'*50)
