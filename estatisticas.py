@@ -15,6 +15,7 @@ media = 0
 linhap = 0
 op = 1
 
+#função para receber os valores
 def inserindoValores(vetor, op):
     op = 1
     while op != 0:
