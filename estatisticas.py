@@ -89,7 +89,7 @@ for c2 in range(len(facum)):
     if pos_mediana <= facum[c2]:
         linhap = c2
         break
-print(f'linha principal: {linhap+1}º')
+print(f'Classe da mediana: {linhap+1}º linha')
 
 def calculoMedias(n, facum, linhap): #calculo da media e da mediana
     global media
